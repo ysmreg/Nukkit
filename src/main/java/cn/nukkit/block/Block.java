@@ -300,7 +300,7 @@ public abstract class Block extends Position implements Metadatable, Cloneable, 
 
             list[OBSERVER] = BlockObserver.class; //251
 
-            for (int id = 0; id < 256; id++) {
+            for (int id = 0; id < list.length; id++) {
                 Class c = list[id];
                 if (c != null) {
                     Block block;
